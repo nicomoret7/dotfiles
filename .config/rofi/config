@@ -1,1 +1,4 @@
-/home/misko/.config/rofi/config
+! === rofi ===
+
+rofi.modi:	ssh,window,drun,run
+rofi.theme:	~/.cache/wal/colors-rofi-dark.rasi
