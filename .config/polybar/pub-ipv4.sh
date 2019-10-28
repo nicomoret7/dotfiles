@@ -1,3 +1,1 @@
-#!/bin/bash
-
-echo $(curl -s https://ipinfo.io/ip)
+/home/misko/.config/polybar/pub-ipv4.sh
