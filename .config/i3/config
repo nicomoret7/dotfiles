@@ -253,7 +253,7 @@ exec --no-startup-id redshift
 exec --no-startup-id megasync
 
 # IDEA
-for_winodw [class="jetbrains-idea-ce"] floating enable
+#for_window [class="jetbrains-idea-ce"] floating enable
 
 # Steam
 for_window [title="Steam - News"] floating enable
