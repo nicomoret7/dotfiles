@@ -148,6 +148,7 @@ assign [class="minecraft-launcher"] $ws10
 assign [class="Minecraft 1.14.4"] $ws10
 assign [class="Binding of Isaac: Afterbirth+"] $ws9
 assign [class="factorio"] $ws9
+assign [class="jetbrains-idea-ce"] $ws4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -250,6 +251,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $HOME/.config/compton/launch.sh
 exec --no-startup-id redshift
 exec --no-startup-id megasync
+
+# IDEA
+for_winodw [class="jetbrains-idea-ce"] floating enable
 
 # Steam
 for_window [title="Steam - News"] floating enable

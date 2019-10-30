@@ -431,7 +431,7 @@ battery = BAT0
 adapter = AC
 full-at = 96
 
-format-charging-prefix = "Battery: " 
+format-charging-prefix = "(charging) Battery: " 
 format-charging = <label-charging>
 ;format-charging-underline = #55aa55
 
