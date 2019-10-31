@@ -263,4 +263,5 @@ for_window [title="Friends List"] floating enable
 for_window [class="feh"] floating enable
 
 # Betterlockscreen
-bindsym $mod+shift+x exec betterlockscreen -l dim
+bindsym $mod+shift+x exec ffmpeg -f x11grab -video_size 1600x900 -i $DISPLAY -vframes 1 ~/.cache/lock.png && betterlockscreen -u ~/.cache/lock.png && betterlockscreen -l dimblur && rm ~/.cache/lock.png
+
