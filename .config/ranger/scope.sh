@@ -64,6 +64,7 @@ handle_extension() {
             mutool draw -F txt -i -- "${FILE_PATH}" 1-10 | fmt -w ${PV_WIDTH} && exit 5
             exiftool "${FILE_PATH}" && exit 5
             exit 1;;
+	    #pdftoppm -jpeg -singlefile "$path" "${cached//.jpg}" && exit 6 || exit 1;;
 
         # BitTorrent
         torrent)
@@ -115,8 +116,8 @@ handle_image() {
         #     ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
         #     exit 1;;
         # PDF
-        # application/pdf)
-        #     pdftoppm -f 1 -l 1 \
+# application/pdf)
+#     pdftoppm -f 1 -l 1 \
         #              -scale-to-x 1920 \
         #              -scale-to-y -1 \
         #              -singlefile \
