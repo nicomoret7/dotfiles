@@ -1,0 +1,9 @@
+mount LABEL=SD /home/misko/mnt/SD
+arm-none-eabi-as -o tmp.o $1.s
+arm-none-eabi-ld -e 0 -Ttext=0x8000 tmp.o
+arm-none-eabi-objcopy a.out -O binary kernel.img
+#stty -F /dev/ttyUSB0 115200
+#sx kernel.img < /dev/ttyUSB0 > /dev/ttyUSB0
+cp kernel.img /home/misko/mnt/SD/
+rm -f a.out tmp.o kernel.img
+umount /home/misko/mnt/SD

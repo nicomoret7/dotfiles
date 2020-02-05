@@ -1,0 +1,8 @@
+ip link set wlp3s0 down
+killall dhcpcd
+systemctl stop NetworkManager
+rm /run/wpa_supplicant/wlp3s0
+rm /run/dhcpcd-wlp3s0.pid
+ip link set wlp3s0 up
+wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+dhcpcd wlp3s0
