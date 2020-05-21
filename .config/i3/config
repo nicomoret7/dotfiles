@@ -171,7 +171,7 @@ assign [class="Minecraft 1.14.4"] $ws10
 assign [class="Minecraft 1.15.2"] $ws10
 assign [class="Binding of Isaac: Afterbirth+"] $ws9
 assign [class="factorio"] $ws9
-assign [class="jetbrains-idea-ce"] $ws10
+assign [class="jetbrains-idea"] $ws10
 assign [class="jetbrains-clion"] $ws10
 assign [class="oracle-ide-osgi-boot-OracleIdeLauncher"] $ws10
 assign [title="Oracle SQL Developer"] $ws10
@@ -249,7 +249,7 @@ for_window [class=".*"] border pixel 2
 for_window [class="firefox"] border pixel 0
 for_window [class="Steam"] border pixel 0
 for_window [class="minecraft-launcher"] border pixel 0
-for_window [class="jetbrains-idea-ce"] border pixel 0
+for_window [class="jetbrains-idea"] border pixel 0
 for_window [class="jetbrains-clion"] border pixel 0
 for_window [class="discord"] border pixel 0
 for_window [class="MEGAsync"] border pixel 0
@@ -281,8 +281,11 @@ exec --no-startup-id wal -R
 
 # Applicaions
 #exec firefox
+# Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id $HOME/.config/compton/launch.sh
+# Compton -> Picom
+#exec_always --no-startup-id $HOME/.config/compton/launch.sh
+exec_always --no-startup-id picom -b
 exec --no-startup-id redshift
 
 # MEGA
