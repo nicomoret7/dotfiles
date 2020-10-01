@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo $(curl -s https://ipinfo.io/ip)
+echo $(dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | sed 's/"//g')

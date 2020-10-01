@@ -1,4 +1,4 @@
-cp -r ~/.config/compton		~/dotfiles/.config/
+cp -r ~/.config/picom		~/dotfiles/.config/
 cp -r ~/.config/kitty		~/dotfiles/.config/
 cp -r ~/.config/ranger		~/dotfiles/.config/
 cp -r ~/.config/polybar		~/dotfiles/.config/
@@ -11,4 +11,5 @@ cp ~/.Xresources		~/dotfiles/
 cp ~/.zshrc			~/dotfiles/
 cp -r ~/Images/Wallpapers	~/dotfiles/
 cp /etc/lightdm/lightdm-mini-greeter.conf ~/dotfiles/etc/lightdm/
+cp /etc/lightdm/lightdm.conf	~/dotfiles/etc/lightdm/
 cp ~/.scripts/*			~/dotfiles/.scripts

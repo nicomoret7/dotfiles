@@ -8,7 +8,7 @@ import sys
 import traceback
 
 
-RUN_PATH = u'/home/misko/Documents/Apps/idea-IC-193.6494.35/bin/idea.sh'
+RUN_PATH = u'/home/misko/Documents/Apps/idea-IU-201.6668.121/bin/idea.sh'
 
 def process_args(argv):
      args = []
