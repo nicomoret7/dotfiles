@@ -1,0 +1,21 @@
+set $wallpaper /home/misko/Images/Wallpaper5.jpg
+
+set $background #010100
+set $foreground #ecd8a6
+
+set $color0 #010100
+set $color1 #887239
+set $color2 #94803F
+set $color3 #A08743
+set $color4 #AE9248
+set $color5 #D2AE56
+set $color6 #E4BC5D
+set $color7 #ecd8a6
+set $color8 #a59774
+set $color9 #887239
+set $color10 #94803F
+set $color11 #A08743
+set $color12 #AE9248
+set $color13 #D2AE56
+set $color14 #E4BC5D
+set $color15 #ecd8a6

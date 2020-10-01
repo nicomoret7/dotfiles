@@ -10,6 +10,7 @@ cp ~/.xinitrc			~/dotfiles/
 cp ~/.Xresources		~/dotfiles/
 cp ~/.zshrc			~/dotfiles/
 cp -r ~/Images/Wallpapers	~/dotfiles/
+cp -r ~/.cache/wal		~/dotfiles/.cache
 cp /etc/lightdm/lightdm-mini-greeter.conf ~/dotfiles/etc/lightdm/
 cp /etc/lightdm/lightdm.conf	~/dotfiles/etc/lightdm/
 cp ~/.scripts/*			~/dotfiles/.scripts

@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/misko/Images/Wallpaper5.jpg"
+let background = "#010100"
+let foreground = "#ecd8a6"
+let cursor     = "#ecd8a6"
+
+" Colors
+let color0  = "#010100"
+let color1  = "#887239"
+let color2  = "#94803F"
+let color3  = "#A08743"
+let color4  = "#AE9248"
+let color5  = "#D2AE56"
+let color6  = "#E4BC5D"
+let color7  = "#ecd8a6"
+let color8  = "#a59774"
+let color9  = "#887239"
+let color10 = "#94803F"
+let color11 = "#A08743"
+let color12 = "#AE9248"
+let color13 = "#D2AE56"
+let color14 = "#E4BC5D"
+let color15 = "#ecd8a6"

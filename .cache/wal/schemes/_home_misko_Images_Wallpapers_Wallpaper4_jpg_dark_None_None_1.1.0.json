@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/misko/Images/Wallpapers/Wallpaper4.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a1e21",
+        "foreground": "#cbc1a1",
+        "cursor": "#cbc1a1"
+    },
+    "colors": {
+        "color0": "#0a1e21",
+        "color1": "#1B4447",
+        "color2": "#274D4C",
+        "color3": "#2D6963",
+        "color4": "#4F5044",
+        "color5": "#6B6146",
+        "color6": "#8B7143",
+        "color7": "#cbc1a1",
+        "color8": "#8e8770",
+        "color9": "#1B4447",
+        "color10": "#274D4C",
+        "color11": "#2D6963",
+        "color12": "#4F5044",
+        "color13": "#6B6146",
+        "color14": "#8B7143",
+        "color15": "#cbc1a1"
+    }
+}
