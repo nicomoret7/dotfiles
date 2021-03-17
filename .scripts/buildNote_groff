@@ -1,0 +1,9 @@
+#!/bin/sh
+
+filename="$1"
+target="$(dirname "${filename}")/../pdf"
+out="$(basename "$filename" .ms).pdf"
+
+mkdir -p $target
+
+(groff -k -Tpdf -ms "$filename" > "$target/$out")&

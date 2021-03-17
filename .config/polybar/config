@@ -312,7 +312,7 @@ interval = 3.0
 
 format-connected = <label-connected>
 ;format-connected-underline = #9f78e1
-label-connected = %essid% 
+label-connected = %essid%  %local_ip% 
 
 format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
@@ -333,8 +333,8 @@ label-disconnected-foreground = ${colors.foreground}
 
 [module/eth]
 type = internal/network
-;interface = net0
-interface = wlp3s0
+interface = enp0s25
+;interface = wlp3s0
 interval = 3.0
 
 ;format-connected-underline = #55aa55
@@ -367,11 +367,11 @@ label = %time%    %date%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = Pulse: %percentage%%
+label-volume = %{A1:pavucontrol:} ¤ %{A}Pulse: %percentage%%
 label-volume-foreground = ${root.foreground}
 
 ;label-muted = ð mute
-label-muted = muted
+label-muted = %{A1:pavucontrol:} ¤ muted
 label-muted-foreground = ${colors.foreground}
 
 bar-volume-width = 10
@@ -429,7 +429,7 @@ bar-volume-empty-foreground = ${colors.foreground}
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 96
+full-at = 94
 
 format-charging-prefix = "(charging) Battery: " 
 format-charging = <label-charging>

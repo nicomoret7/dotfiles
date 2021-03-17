@@ -1,0 +1,13 @@
+#!/bin/sh
+
+file="$HOME/MEGAsync/Docs/Notas/src/note-$(date +%Y-%m-%d).md"
+
+[ ! -f $file ] && echo "# Notas de $(date +%d-%m-%Y)" > $file
+
+vim -c "norm Go" \
+	-c "norm Go## $(date +%H:%M)" \
+	-c "norm G2o" \
+	-c "norm zz" \
+	-c "startinsert" $file
+
+

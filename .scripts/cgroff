@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+if [ ! -d "groff" ]
+then
+	echo "No existe el directorio groff"
+else
+	for i in groff/*.png
+	do
+		nombre=`echo $i | cut -d '.' -f 1`
+		convert $i $nombre.ps
+	done
+fi
+[ -f $1.ms ] && groff -Tps -mspdf -k -D utf8 $1.ms > groff/$1.ps && ps2pdf groff/$1.ps $1.pdf || echo "El archivo $1.ms no existe"

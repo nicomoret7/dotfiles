@@ -26,6 +26,9 @@ font pango:Awesome 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# Alarma bateria
+exec $HOME/.scripts/alarma_bateria&
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 #exec --no-startup-id nm-applet
@@ -36,7 +39,6 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -55,6 +57,8 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+
 
 # change focus
 bindsym $mod+j focus left
@@ -167,18 +171,24 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 assign [class="firefox"] $ws1
 assign [class="Steam"]   $ws10
 assign [class="minecraft-launcher"] $ws10
-assign [class="Minecraft 1.14.4"] $ws10
+assign [class="Minecraft 1.16.3"] $ws10
 assign [class="Minecraft 1.15.2"] $ws10
 assign [class="Binding of Isaac: Afterbirth+"] $ws9
 assign [class="factorio"] $ws9
 assign [class="jetbrains-idea"] $ws10
 assign [class="jetbrains-clion"] $ws10
+assign [class="jetbrains-pycharm"] $ws10
 assign [class="oracle-ide-osgi-boot-OracleIdeLauncher"] $ws10
 assign [title="Oracle SQL Developer"] $ws10
 assign [class="csgo_linux64"] $ws9
 assign [class="discord"] $ws8
 assign [class="vvvvvv.x86_64"] $ws9
 assign [class="Dwarf_Fortress"] $ws10
+assign [class="microsoft teams - preview"] $ws3
+assign [class="Microsoft Teams - Preview"] $ws3
+assign [class="deadcells.exe"] $ws9
+assign [class="jetbrains-studio"] $ws10
+assign [class="NetBeans IDE 8.0"] $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -248,11 +258,14 @@ exec "setxkbmap -layout es"
 for_window [class=".*"] border pixel 2
 for_window [class="firefox"] border pixel 0
 for_window [class="Steam"] border pixel 0
+for_window [class="jetbrains-studio"] border pixel 0
 for_window [class="minecraft-launcher"] border pixel 0
 for_window [class="jetbrains-idea"] border pixel 0
 for_window [class="jetbrains-clion"] border pixel 0
+for_window [class="jetbrains-pycharm"] border pixel 0
 for_window [class="discord"] border pixel 0
 for_window [class="MEGAsync"] border pixel 0
+for_window [class="NetBeans IDE 8.0"] border pixel 0
 gaps inner 22
 gaps horizontal 25
 workspace $ws1 gaps inner 10 
@@ -287,6 +300,12 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec_always --no-startup-id $HOME/.config/compton/launch.sh
 exec_always --no-startup-id picom -b
 exec --no-startup-id redshift
+
+# Notas
+for_window [title="note_taker"] floating enable resize set 800 600 move position center
+#bindsym $mod+n exec kitty -T "note_taker" $HOME/.scripts/newnote
+bindsym $mod+n exec kitty -T "note_taker" $HOME/.scripts/newnote_groff
+bindsym $mod+Shift+n exec $HOME/.scripts/recentNote
 
 # MEGA
 exec --no-startup-id megasync

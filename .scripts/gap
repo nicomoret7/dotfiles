@@ -1,0 +1,9 @@
+#!/bin/sh
+
+GAP_EXE=$GAP_DIR
+if [ "x$GAP_DIR" = "x" ]; then
+  GAP_DIR=$(cd "/home/misko/Documents/Apps/gap-4.11.0" && pwd)
+  GAP_EXE="/home/misko/Documents/Apps/gap-4.11.0"
+fi
+
+exec "$GAP_EXE/gap" -l "$GAP_DIR" "$@"
