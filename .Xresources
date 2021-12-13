@@ -66,3 +66,6 @@ XClock*secondColor: rgba:c5/cc/be/ff
 
 ! Set depth to make transparency work.
 URxvt*depth: 32
+
+! Cursor size
+Xcursor.size: 28

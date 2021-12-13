@@ -189,6 +189,9 @@ assign [class="Microsoft Teams - Preview"] $ws3
 assign [class="deadcells.exe"] $ws9
 assign [class="jetbrains-studio"] $ws10
 assign [class="NetBeans IDE 8.0"] $ws10
+assign [title="Loop Hero"] $ws9
+assign [class="steam_app_1366540"] $ws9
+assign [class="Vmware"] $ws9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -238,9 +241,9 @@ bindsym $mod+r mode "resize"
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 
-set $bg	#94803F
+set $bg	#4b6c93
 set $fg #c5ccbe
-set $border #e4bc5d
+set $border #7cb1c4
 
 # class                 border  backgr. text indicator child_border
 client.focused          $bg     $bg     $fg  $border   $border
@@ -288,7 +291,7 @@ bindsym XF86AudioPrev exec --no-startup-id previous
 
 # Wallpaper set
 # exec_always feh --bg-scale /home/misko/Images/Wallpapers/Wallpaper5.jpg 
-exec_always feh --bg-fill ~/Images/Wallpapers/Wallpaper5.jpg ~/Images/Wallpapers/Wallpper1_full.jpg
+exec_always feh --bg-fill ~/Images/Wallpapers/Wallpaper8_full.jpg ~/Images/Wallpapers/Wallpaper1_full.jpg ~/Images/Wallpapers/Wallpaper7.jpg
 
 # Colors
 exec --no-startup-id wal -R
