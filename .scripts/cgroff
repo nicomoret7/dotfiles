@@ -4,7 +4,7 @@ if [ ! -d "groff" ]
 then
 	echo "No existe el directorio groff"
 else
-	for i in groff/*.png
+	for i in `ls groff/*.png`
 	do
 		nombre=`echo $i | cut -d '.' -f 1`
 		convert $i $nombre.ps
