@@ -4,13 +4,14 @@ cp -r ~/.config/ranger		~/dotfiles/.config/
 cp -r ~/.config/polybar		~/dotfiles/.config/
 cp -r ~/.config/redshift	~/dotfiles/.config/
 cp -r ~/.config/rofi		~/dotfiles/.config/
-cp -r ~/.config/i3		~/dotfiles/.config/
+cp -r ~/.config/i3			~/dotfiles/.config/
 cp ~/.config/betterlockscreenrc	~/dotfiles/.config/
-cp ~/.xinitrc			~/dotfiles/
-cp ~/.Xresources		~/dotfiles/
-cp ~/.zshrc			~/dotfiles/
+cp ~/.xinitrc				~/dotfiles/
+cp ~/.Xresources			~/dotfiles/
+cp ~/.zshrc					~/dotfiles/
 cp -r ~/Images/Wallpapers	~/dotfiles/
-cp -r ~/.cache/wal		~/dotfiles/.cache
+cp -r ~/.cache/wal			~/dotfiles/.cache
 cp /etc/lightdm/lightdm-mini-greeter.conf ~/dotfiles/etc/lightdm/
 cp /etc/lightdm/lightdm.conf	~/dotfiles/etc/lightdm/
-cp ~/.scripts/*			~/dotfiles/.scripts
+cp ~/.scripts/*				~/dotfiles/.scripts
+cp ~/.vimrc					~/dotfiles/
